@@ -15,7 +15,6 @@ int hash(unsigned char *str) {
     while (c = *str++) {
         // hash = hash * 33 + c;
         hash = (((hash << 5) + hash) + c) ; /* hash * 33 + c */
-        hash
     }
 
     return hash % HASH_SIZE;
